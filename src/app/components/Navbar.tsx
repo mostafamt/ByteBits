@@ -26,8 +26,8 @@ const Navbar = () => {
         <img src="/logo.svg" alt="logo" />
         {navItems.map((item) => {
           return (
-            <li key={item.name}>
-              <a href={item.link}>{item.name}</a>
+            <li key={item.id}>
+              <Link href={item.link}>{item.name}</Link>
             </li>
           );
         })}

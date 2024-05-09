@@ -6,15 +6,15 @@ const HomeHeader = () => {
     title: "Welcome.",
     description: (
       <span>
-        to <strong>Byte</strong>Bits!
+        to <span style={{ fontWeight: 600 }}>Byte</span>Bits!
       </span>
     ),
     title2: "The best, Designed for you.",
     description2: (
       <span>
         At ByteBits, we're not just your typical software engineering
-        consultancy—we're specialists, adaptable, and approachable. Rooted in
-        problem-solving, we blend our extensive technical expertise with a human
+        consultancy, we're specialists, adaptable, and approachable. Rooted in
+        problem solving, we blend our extensive technical expertise with a human
         touch to deliver software solutions that drive results. <br />
         <br /> Whether you're looking to enhance your digital product, improve
         your team's performance and delivery, or optimize your business

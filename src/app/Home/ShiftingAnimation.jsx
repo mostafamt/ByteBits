@@ -1,43 +1,43 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import styles from "../../styles/onesAndZeros.module.scss";
 
 const ShiftingAnimation = () => {
   const [binaryStrings, setBinaryStrings] = useState([]);
-  const intervalRef = useRef(null);
-  const maxLength = 30;
 
   useEffect(() => {
-    intervalRef.current = setInterval(() => {
+    const interval = setInterval(() => {
+      // Generate multiple binary strings with different offsets
       setBinaryStrings((prevBinaryStrings) => {
-        // Leverage a separate array for efficiency
-        const newBinaryStrings = [];
-        for (let i = 0; i < prevBinaryStrings.length; i++) {
-          const offset = Math.floor(Math.random() * maxLength);
+        const maxLength = 30; // Maximum length for binary strings
+        const newBinaryStrings = prevBinaryStrings.map((str) => {
+          const offset = Math.floor(Math.random() * maxLength); // Random offset within the range
           const binaryString =
-            prevBinaryStrings[i].string.slice(-offset) +
-            prevBinaryStrings[i].string.slice(0, -offset);
-          newBinaryStrings.push({
+            str.string.slice(-offset) + str.string.slice(0, -offset);
+          const delay = Math.floor(Math.random() * 500) + 100; // Random delay between 100ms and 600ms
+          return {
             string: binaryString,
-            delay: prevBinaryStrings[i].delay,
-          });
-        }
+            delay: delay,
+          };
+        });
         return newBinaryStrings;
       });
-    }, 300);
+    }, 300); // Change the interval duration as needed
 
-    return () => clearInterval(intervalRef.current);
-  }, [maxLength]); // Only re-run when maxLength changes
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
+    // Initialize the binary strings
     const initialBinaryStrings = Array.from({ length: 10 }, () => {
+      const maxLength = 45; // Maximum length for binary strings
       const binaryString = "10".repeat(maxLength);
-      const delay = Math.floor(Math.random() * 500) + 100;
+      const delay = Math.floor(Math.random() * 500) + 100; // Random delay between 100ms and 600ms
       return { string: binaryString, delay: delay };
     });
     setBinaryStrings(initialBinaryStrings);
-  }, [maxLength]); // Only re-run when maxLength changes
+  }, []);
 
   return (
     <div className={styles.container}>
