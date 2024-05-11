@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
-import styles from "../../styles/onesAndZeros.module.scss";
+import { useEffect, useState } from "react";
+import styles from "./onesAndZeros.module.scss";
 
 const ShiftingAnimation = () => {
   const [binaryStrings, setBinaryStrings] = useState([]);
@@ -9,12 +8,11 @@ const ShiftingAnimation = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       // Generate multiple binary strings with different offsets
-      setBinaryStrings((prevBinaryStrings) => {
+      setBinaryStrings(prevBinaryStrings => {
         const maxLength = 30; // Maximum length for binary strings
-        const newBinaryStrings = prevBinaryStrings.map((str) => {
+        const newBinaryStrings = prevBinaryStrings.map(str => {
           const offset = Math.floor(Math.random() * maxLength); // Random offset within the range
-          const binaryString =
-            str.string.slice(-offset) + str.string.slice(0, -offset);
+          const binaryString = str.string.slice(-offset) + str.string.slice(0, -offset);
           const delay = Math.floor(Math.random() * 500) + 100; // Random delay between 100ms and 600ms
           return {
             string: binaryString,

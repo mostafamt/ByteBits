@@ -1,16 +1,18 @@
 "use client";
-import { useEffect, useState } from "react";
-import styles from "../../styles/navbar.module.scss";
-import navItems from "./nav-items.json";
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-const Navbar = () => {
+import styles from "./navbar.module.scss";
+
+import navItems from "./nav-items.json";
+
+export default function Navbar() {
   const [isNavVisible, setIsNavVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
       setIsNavVisible(scrollTop <= 0);
     };
 
@@ -23,8 +25,8 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${isNavVisible ? "" : styles.hidden}`}>
       <ul>
-        <img src="/logo.svg" alt="logo" />
-        {navItems.map((item) => {
+        <Image src="/logo.svg" width={100} height={100} alt="logo" />
+        {navItems.map(item => {
           return (
             <li key={item.id}>
               <Link href={item.link}>{item.name}</Link>
@@ -39,6 +41,4 @@ const Navbar = () => {
       </ul>
     </nav>
   );
-};
-
-export default Navbar;
+}
