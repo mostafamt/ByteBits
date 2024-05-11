@@ -1,10 +1,10 @@
 import HomeHeader from "@/features/Home/HomeHeader";
-import ShiftingAnimation from "@/features/Home/onesAndZeros/ShiftingAnimation";
+import OnesAndZeros from "@/components/OnesAndZeros/OnesAndZeros";
 
 export default function Home() {
   return (
     <div>
-      <ShiftingAnimation />
+      <OnesAndZeros />
       <HomeHeader />
     </div>
   );
