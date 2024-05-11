@@ -1,67 +1,67 @@
-@import '../../_variables.scss';
+@import "../../_variables.scss";
 
 .navbar {
-	font-family: $primary-font;
-	position: fixed;
-	padding: 1rem;
-	margin-top: 1rem;
-	width: 100%;
-	z-index: 1000; // Ensure navbar stays on top
-	transition: top 0.3s ease; // Smooth transition when hiding/showing
+  font-family: $primary-font;
+  position: fixed;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  z-index: 1000; // Ensure navbar stays on top
+  transition: top 0.3s ease; // Smooth transition when hiding/showing
 
-	&.hidden a,
-	&.hidden img {
-		// fade out
-		opacity: 0;
-		transition: 500ms;
-	}
-	&.hidden button a {
-		opacity: 1;
-	}
+  &.hidden a,
+  &.hidden img {
+    // fade out
+    opacity: 0;
+    transition: 500ms;
+  }
+  &.hidden button a {
+    opacity: 1;
+  }
 
-	ul {
-		display: flex;
-		justify-content: center;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		align-items: center;
-	}
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
 
-	li {
-		display: inline;
-		margin-left: 4rem;
-	}
+  li {
+    display: inline;
+    margin-left: 4rem;
+  }
 
-	a {
-		&.selected {
-			font-weight: 900 !important;
-		}
-		transition: 500ms;
-		font-weight: 400;
-		color: $light;
-		text-decoration: none;
-		font-size: 1.5rem;
-	}
+  a {
+    &.selected {
+      font-weight: 900 !important;
+    }
+    transition: 500ms;
+    font-weight: 400;
+    color: $light;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
 
-	img {
-		transition: 500ms;
-		width: 17rem;
-		height: fit-content;
-	}
+  img {
+    transition: 500ms;
+    width: 17rem;
+    height: fit-content;
+  }
 
-	button {
-		a {
-			display: block !important;
-			font-weight: 600 !important;
-		}
-		background-color: $primary;
-		color: $light;
-		border: none;
-		padding: 0.6rem 1.6rem;
-		font-size: 1.7rem;
-		border-radius: 22px;
-		cursor: pointer;
-		margin-left: 2rem;
-	}
+  button {
+    a {
+      display: block !important;
+      font-weight: 600 !important;
+    }
+    background-color: $primary;
+    color: $light;
+    border: none;
+    padding: 0.6rem 1.6rem;
+    font-size: 1.7rem;
+    border-radius: 22px;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
 }

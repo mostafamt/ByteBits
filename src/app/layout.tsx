@@ -1,23 +1,23 @@
-import Navbar from '@/components/navbar/Navbar';
-import type { Metadata } from 'next';
+import Navbar from "@/components/navbar/Navbar";
+import type { Metadata } from "next";
 
-import styles from './main.module.scss';
+import styles from "./main.module.scss";
 
-import Home from './page';
+import Home from "./page";
 
 export const metadata: Metadata = {
-	title: 'ByteBits',
-	description:
-		'ByteBits is a software development company that specializes in web development, mobile development, and cloud services.',
+  title: "ByteBits",
+  description:
+    "ByteBits is a software development company that specializes in web development, mobile development, and cloud services.",
 };
 
 export default function RootLayout() {
-	return (
-		<html className={styles.html} lang='en'>
-			<body>
-				<Navbar />
-				<Home />
-			</body>
-		</html>
-	);
+  return (
+    <html className={styles.html} lang="en">
+      <body>
+        <Navbar />
+        <Home />
+      </body>
+    </html>
+  );
 }

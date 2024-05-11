@@ -1,32 +1,32 @@
 .container {
-	overflow: hidden;
-	top: -19%;
-	right: -5%;
-	transform: rotate(10deg);
-	z-index: 2;
-	background: linear-gradient(
-		to top,
-		rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 0.055) 40%,
-		rgba(255, 255, 255, 0.76) 100%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	// font-family: "Space Mono", monospace;
-	font-family: 'VT323', monospace;
-	font-size: 2.5rem;
-	font-weight: bold;
-	line-height: 0.1;
-	position: absolute;
-	color: transparent;
-	width: -moz-fit-content;
-	width: fit-content;
-	overflow-y: clip;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none;
+  overflow: hidden;
+  top: -19%;
+  right: -5%;
+  transform: rotate(10deg);
+  z-index: 2;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.055) 40%,
+    rgba(255, 255, 255, 0.76) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // font-family: "Space Mono", monospace;
+  font-family: "VT323", monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 0.1;
+  position: absolute;
+  color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow-y: clip;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
