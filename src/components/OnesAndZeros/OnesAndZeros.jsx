@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from "./onesAndZeros.module.scss";
 
-const ShiftingAnimation = () => {
+const OnesAndZeros = () => {
   const [binaryStrings, setBinaryStrings] = useState([]);
 
   useEffect(() => {
@@ -48,4 +48,4 @@ const ShiftingAnimation = () => {
   );
 };
 
-export default ShiftingAnimation;
+export default OnesAndZeros;
