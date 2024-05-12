@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-import styles from "./homeHeader.module.scss";
+import styles from "./styles/homeHeader.module.scss";
 
 export default function HomeHeader() {
   return (

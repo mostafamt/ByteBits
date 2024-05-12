@@ -1,4 +1,4 @@
-import styles from "./rightParagraph.module.scss";
+import styles from "./styles/rightParagraph.module.scss";
 
 export default function RightParagraph(props: {
   image: string;

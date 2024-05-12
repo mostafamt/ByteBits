@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import styles from "./navbar.module.scss";
+import styles from "./styles/navbar.module.scss";
 
 import navItems from "./nav-items.json";
 
