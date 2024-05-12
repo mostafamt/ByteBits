@@ -48,4 +48,4 @@ const OnesAndZeros = () => {
   );
 };
 
-export default ShiftingAnimation;
+export default OnesAndZeros;

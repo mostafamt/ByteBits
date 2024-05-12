@@ -6,21 +6,6 @@ export default function HomeHeader() {
   return (
     <>
       <header className={styles.homeHeader}>
-        <Image
-          className={styles.firstwave}
-          width={1000}
-          height={940}
-          src="/waveDark.svg"
-          alt="wave"
-        />
-        <Image
-          className={styles.secondwave}
-          width={1000}
-          height={1000}
-          src="/waveGray.svg"
-          alt="wave"
-        />
-
         <section>
           <div>
             <h1>Welcome</h1>
@@ -42,6 +27,7 @@ export default function HomeHeader() {
             </p>
           </div>
         </section>
+        <img src="/waveBottom.svg" alt="wave" />
       </header>
     </>
   );
