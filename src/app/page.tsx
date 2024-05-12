@@ -1,6 +1,6 @@
-import HomeHeader from "@/features/Home/HomeHeader";
 import OnesAndZeros from "@/components/OnesAndZeros/OnesAndZeros";
 import RightParagraph from "@/components/RightParagraph/RightParagraph";
+import HomeHeader from "@/features/Home/HomeHeader";
 import OurProcess from "@/features/Home/OurProcess";
 
 export default function Home() {
@@ -11,7 +11,11 @@ export default function Home() {
       <RightParagraph
         image="image.svg"
         alt="image"
-        heading={`We are Byte<span style="font-weight: 300; color: #2ec4b6">Bits</span>`}
+        heading={
+          <>
+            We are Byte<span className="blueText">Bits</span>
+          </>
+        }
         paragraph={`We are a team of innovative thinkers, driven by a passion for technology and a commitment to excellence. 
         We specialize in creating IT solutions that help businesses thrive in a rapidly evolving digital landscape. 
         Our diverse backgrounds and skills enable us to tackle challenges with creativity and deliver results that exceed expectations. 

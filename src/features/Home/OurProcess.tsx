@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./ourProcess.module.scss";
+import styles from "./styles/ourProcess.module.scss";
 export default function OurProcess() {
   return (
     <section className={styles.ourProcess}>
