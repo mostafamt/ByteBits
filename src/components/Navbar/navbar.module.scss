@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+  font-size: 1.25rem;
+
+  & ul {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+  }
+
+  & button {
+    width: 13.5625rem;
+    height: 3.1875rem;
+    background-color: $primary;
+
+    font-weight: bold;
+    border-radius: 22px;
+  }
+}

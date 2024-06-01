@@ -1,9 +1,8 @@
+import Header from "@/components/Header/Header";
 import Navbar from "@/features/Navbar/Navbar";
 import type { Metadata } from "next";
 
-import styles from "./main.module.scss";
-
-import Home from "./page";
+import "./globals.scss";
 
 export const metadata: Metadata = {
   title: "ByteBits",
@@ -11,12 +10,12 @@ export const metadata: Metadata = {
     "ByteBits is a software development company that specializes in web development, mobile development, and cloud services.",
 };
 
-export default function RootLayout() {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html className={styles.html} lang="en">
+    <html lang="en">
       <body>
-        <Navbar />
-        <Home />
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );

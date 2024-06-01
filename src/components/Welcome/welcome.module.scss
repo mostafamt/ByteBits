@@ -1,0 +1,15 @@
+.welcome {
+  margin-top: 5%;
+  & > div {
+    & h1 {
+      color: $primary;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    & p {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+}

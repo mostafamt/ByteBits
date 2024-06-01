@@ -1,0 +1,14 @@
+.header {
+  height: 41.875rem;
+  background-color: $dark;
+  color: $light;
+
+  & section {
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
