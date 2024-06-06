@@ -1,15 +1,34 @@
 .welcome {
-  margin-top: 5%;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
   & > div {
     & h1 {
       color: $primary;
       font-size: 4rem;
       font-weight: 700;
+      margin-bottom: 2rem;
+
+      &.light {
+        color: $dark;
+      }
+      &.dark {
+        color: $light;
+      }
     }
 
     & p {
       font-size: 1.5rem;
       font-weight: 700;
+
+      &.light {
+        color: $dark;
+      }
+      &.dark {
+        color: $light;
+      }
     }
   }
 }

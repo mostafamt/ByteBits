@@ -10,14 +10,32 @@
     display: flex;
     justify-content: space-between;
     font-weight: 500;
+
+    & a {
+      color: $light;
+
+      &.active {
+        font-weight: 700;
+      }
+    }
   }
 
   & button {
     width: 13.5625rem;
     height: 3.1875rem;
     background-color: $primary;
+    color: $light;
+    font-size: 1.25rem;
 
     font-weight: bold;
     border-radius: 22px;
+    border-color: transparent;
+
+    &.light {
+      background-color: $dark;
+    }
+    &.dark {
+      background-color: $primary;
+    }
   }
 }

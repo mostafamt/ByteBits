@@ -1,32 +1,38 @@
 import React from "react";
 import Image from "next/image";
+import { routes } from "@/routes";
 
 import styles from "./navbar.module.scss";
+import { usePathname } from "next/navigation";
 
-type Props = {};
+type Props = {
+  theme: string | "";
+};
 
 const Navbar = (props: Props) => {
+  const pathname = usePathname();
+  const { theme } = props;
+
+  console.log(pathname);
+
   return (
     <nav className={styles.nav}>
-      <Image src="/logo.svg" alt="logo" width={250} height={64} />
+      <Image
+        src={theme === "light" ? "/dark-logo.svg" : "/light-logo.svg"}
+        alt="logo"
+        width={250}
+        height={64}
+      />
       <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about">About us</a>
-        </li>
-        <li>
-          <a href="/projects">Projects</a>
-        </li>
-        <li>
-          <a href="/services">Services</a>
-        </li>
-        <li>
-          <a href="/team">Our team</a>
-        </li>
+        {routes.map(route => (
+          <li key={route.href}>
+            <a href={route.href} className={pathname === route.href ? styles.active : ""}>
+              {route.label}
+            </a>
+          </li>
+        ))}
       </ul>
-      <button>become a client</button>
+      <button className={styles[`${theme}`]}>Become a client</button>
     </nav>
   );
 };
