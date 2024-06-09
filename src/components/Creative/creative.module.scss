@@ -1,0 +1,10 @@
+.creative {
+  & > div {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      flex: 0 1 50%;
+    }
+  }
+}

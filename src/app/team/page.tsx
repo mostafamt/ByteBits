@@ -1,9 +1,16 @@
+import Connected from "@/components/Connected/Connected";
+import Creative from "@/components/Creative/Creative";
 import React from "react";
 
 type Props = {};
 
 const page = (props: Props) => {
-  return <div>Team page</div>;
+  return (
+    <>
+      <Creative />
+      <Connected />
+    </>
+  );
 };
 
 export default page;

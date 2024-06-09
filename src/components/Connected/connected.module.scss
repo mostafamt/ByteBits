@@ -1,0 +1,34 @@
+.connected {
+  margin: 6rem 0;
+  color: $dark;
+
+  & > h2 {
+    text-align: center;
+    font-size: 4rem;
+
+    & > span {
+      color: $primary;
+    }
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > * {
+      flex: 0 1 45%;
+    }
+
+    & > div {
+      & > h3 {
+        font-size: 4rem;
+      }
+
+      & > p {
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+    }
+  }
+}
