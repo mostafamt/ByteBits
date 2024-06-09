@@ -1,0 +1,62 @@
+.values {
+  margin: 8rem 0;
+  color: $dark;
+  & > div {
+    &:first-child {
+      width: 60%;
+      text-align: center;
+      margin: 4rem auto;
+
+      & > h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+
+        
+      }
+
+      & > p {
+        font-size: 1.5rem;
+      }
+    }
+
+    &:last-child {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20%;
+      row-gap: 4rem;
+
+      & > div {
+        font-size: 1.5rem;
+        text-align: justify;
+
+        & > h4 {
+          font-weight: 600;
+          margin-bottom: 1.6rem;
+
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          & > span {
+            &:first-child {
+              display: inline-block;
+              text-align: center;
+              color: #fff;
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+        }
+
+        & > p {
+        }
+
+        &:last-child {
+          grid-column: 1 / span 2;
+          justify-self: center;
+          width: 40%;
+        }
+      }
+    }
+  }
+}

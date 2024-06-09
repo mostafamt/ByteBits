@@ -1,4 +1,37 @@
 .process {
   background-color: $dark;
   color: $light;
+
+  &>div>div {
+    padding: 4rem 0;
+
+    &>h2 {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+
+      &>span {
+        color: $primary;
+      }
+    }
+
+    &>div {
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        flex: 0 1 20%;
+        & > h3 {
+          font-size: 1.75rem;
+          margin-bottom: 2rem;
+          font-weight: 500;
+        }
+
+        & > p {
+          font-size: 1.25rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
 }

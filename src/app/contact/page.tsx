@@ -1,9 +1,14 @@
+import Talk from "@/components/Talk/Talk";
 import React from "react";
 
 type Props = {};
 
 const Contact = (props: Props) => {
-  return <div>Contact</div>;
+  return (
+    <>
+      <Talk />
+    </>
+  );
 };
 
 export default Contact;

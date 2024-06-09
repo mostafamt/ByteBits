@@ -8,23 +8,25 @@ const Process = (props: Props) => {
   return (
     <div className={styles.process} >
       <div className="container">
-        <h2>Our process</h2>
         <div>
+          <h2>Our <span>process</span></h2>
           <div>
-            <h3>Meet with you</h3>
-            <p>Gather requirements, understand your needs, and clarify any ambiguities. </p>
-          </div>
-          <div>
-            <h3>Meet with you</h3>
-            <p>Gather requirements, understand your needs, and clarify any ambiguities. </p>
-          </div>
-          <div>
-            <h3>Meet with you</h3>
-            <p>Gather requirements, understand your needs, and clarify any ambiguities. </p>
-          </div>
-          <div>
-            <h3>Meet with you</h3>
-            <p>Gather requirements, understand your needs, and clarify any ambiguities. </p>
+            <div>
+              <h3>Meet with you</h3>
+              <p>Gather requirements, understand your needs, and clarify any ambiguities. </p>
+            </div>
+            <div>
+              <h3>Meet with you</h3>
+              <p>Gather requirements, understand your needs, and clarify any ambiguities. </p>
+            </div>
+            <div>
+              <h3>Meet with you</h3>
+              <p>Gather requirements, understand your needs, and clarify any ambiguities. </p>
+            </div>
+            <div>
+              <h3>Meet with you</h3>
+              <p>Gather requirements, understand your needs, and clarify any ambiguities. </p>
+            </div>
           </div>
         </div>
       </div>

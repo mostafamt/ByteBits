@@ -1,24 +1,25 @@
 import Image from 'next/image';
 import React from 'react'
 
+import styles from './getBussiness.module.scss';
+
 type Props = {}
 
 const GetBussiness = (props: Props) => {
   return (
     <div className='container'>
-      <div>
+      <div className={styles['get-bussiness']} >
         <div>
           <h2>Get your business running online.</h2>
-          <button>become a client</button>
+          <button>Become a <span>client</span> </button>
         </div>
         <div>
           <Image
             src="/sammy-line-18 1.svg"
             alt="logo"
-            width={250}
-            height={250}
+            width={600}
+            height={600}
           />
-          {/* sammy-line-18 1 */}
         </div>
       </div>
 

@@ -1,0 +1,23 @@
+.story {
+  display: flex;
+  margin: 4rem 0;
+
+  & > div {
+    flex: 0 1 50%;
+
+    &:last-child {
+      & > h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        & > span {
+            color: $primary;
+        }
+      }
+
+      & > p {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

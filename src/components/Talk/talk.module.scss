@@ -1,0 +1,30 @@
+.talk {
+  transform: translateY(-22rem);
+  display: flex;
+
+  & > div {
+    flex: 0 1 50%;
+
+    &:first-child {
+      & > div {
+        & ul {
+          & > li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      & .form {
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 80%;
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+    }
+  }
+}
