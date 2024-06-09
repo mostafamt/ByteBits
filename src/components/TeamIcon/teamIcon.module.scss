@@ -1,0 +1,30 @@
+.icon-box {
+    position: absolute;
+    top: -15.5rem;
+    left: 0;
+    z-index: -2;
+    // width: 100%;
+  
+    & img {
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+  
+  @media (max-width: 1700px) {
+    .wave-box {
+      top: -10rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .wave-box {
+      top: -8rem;
+    }
+  }
+  @media (max-width: 950px) {
+    .wave-box {
+      top: -8rem;
+    }
+  }
+  

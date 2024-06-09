@@ -13,8 +13,6 @@ const Navbar = (props: Props) => {
   const pathname = usePathname();
   const { theme } = props;
 
-  console.log(pathname);
-
   return (
     <nav className={styles.nav}>
       <Image

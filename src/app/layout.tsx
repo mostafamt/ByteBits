@@ -1,6 +1,6 @@
-import Header from "@/components/Header/Header";
-import Navbar from "@/features/Navbar/Navbar";
 import type { Metadata } from "next";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 import "./globals.scss";
 
@@ -16,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
