@@ -1,0 +1,14 @@
+.meet {
+
+
+  & > h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &>div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

@@ -2,8 +2,8 @@
 import React from "react";
 import Welcome from "@/components/Welcome/Welcome";
 import Navbar from "@/components/Navbar/Navbar";
-import Wave1 from "@/components/Wave1/Wave1";
-import Wave2 from "@/components/Wave2/Wave2";
+import Wave1 from "@/components/svgs/Wave1/Wave1";
+import Wave2 from "@/components/svgs/Wave2/Wave2";
 
 import styles from "./headerDark.module.scss";
 

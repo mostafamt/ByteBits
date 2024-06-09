@@ -3,10 +3,10 @@ import React from 'react'
 
 import styles from './footer.module.scss';
 import Image from 'next/image';
-import Wave3 from '../Wave3/Wave3';
-import Wave4 from '../Wave4/Wave4';
+import Wave3 from '../svgs/Wave3/Wave3';
+import Wave4 from '../svgs/Wave4/Wave4';
 import { usePathname } from 'next/navigation';
-import TeamIcon from '../TeamIcon/TeamIcon';
+import TeamIcon from '../svgs/TeamIcon/TeamIcon';
 
 type Props = {}
 
