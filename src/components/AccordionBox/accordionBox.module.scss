@@ -1,0 +1,29 @@
+.accordion-box {
+  background-color: $dark;
+  height: 18.75rem;
+  border-radius: 0.5rem;
+  position: relative;
+  margin: 3rem 0;
+  overflow: hidden;
+  transition:
+    height 1s,
+    background-color 1s;
+
+  & button {
+    position: absolute;
+    top: 1rem;
+    right: 2%;
+    background-color: transparent;
+    border: none;
+
+    & > svg {
+      font-size: 3rem;
+      fill: #fff;
+    }
+  }
+
+  &.open {
+    background-color: $primary;
+    height: auto;
+  }
+}

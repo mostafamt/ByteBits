@@ -1,9 +1,14 @@
+import Accordion from "@/components/Accordion/Accordion";
 import React from "react";
 
 type Props = {};
 
 const page = (props: Props) => {
-  return <div>Services page</div>;
+  return (
+    <>
+    <Accordion />
+    </>
+  );
 };
 
 export default page;

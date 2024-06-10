@@ -1,7 +1,22 @@
 .creative {
+  & > h2 {
+    font-size: 4rem;
+    text-align: center;
+
+    & > span {
+      color: $primary;
+    }
+  }
+
   & > div {
     display: flex;
     align-items: center;
+
+    & p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-align: justify;
+    }
 
     & > * {
       flex: 0 1 50%;

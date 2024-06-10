@@ -9,7 +9,7 @@ const Creative = (props: Props) => {
   return (
     <div className="container">
       <div className={styles.creative} >
-        <h2>Creative • Passionate • Experts</h2>
+        <h2>Creative • Passionate • <span>Experts</span></h2>
         <div>
           <p>
             Our team is a dynamic group of talented professionals with a passion for technology and

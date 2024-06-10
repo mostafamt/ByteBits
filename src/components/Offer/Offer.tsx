@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./offer.module.scss";
 import Image from "next/image";
+import Note from "../Note/Note";
 
 type Props = {};
 
@@ -29,9 +30,7 @@ const Offer = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className={styles.note}>
-        &quot;Innovation is the engine that powers IT solutions.&quot;
-      </div>
+      <Note>&quot;Innovation is the engine that powers IT solutions.&quot;</Note>
     </>
   );
 };

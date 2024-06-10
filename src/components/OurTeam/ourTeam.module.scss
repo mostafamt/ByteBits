@@ -1,0 +1,95 @@
+.our-team {
+  background: rgb(1, 22, 39);
+  background: linear-gradient(
+    180deg,
+    rgba(1, 22, 39, 1) 0%,
+    rgba(3, 28, 44, 1) 3%,
+    rgba(7, 46, 59, 1) 9%,
+    rgba(21, 98, 102, 1) 19%,
+    rgba(46, 196, 182, 1) 39%,
+    rgba(253, 255, 252, 1) 100%
+  );
+  color: $light;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  & > div:first-child {
+    padding: 4rem 0;
+
+    & h2,
+    & > h3 {
+      margin-bottom: 3rem;
+    }
+
+    & > div:first-child {
+      display: flex;
+      justify-content: flex-end;
+      & > h2 {
+        position: relative;
+        text-align: right;
+        font-size: 4rem;
+        font-weight: 600;
+
+        & > span {
+          &:first-child {
+            color: $secondary;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1.5rem;
+            transform: translate(-2rem, -1rem);
+          }
+
+          &:last-child {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    & > h3 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+
+    & .cards {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .developers {
+      background-color: $dark;
+      margin: 4rem 0;
+      padding: 2rem;
+      border-radius: 2rem;
+      color: $light;
+      text-align: center;
+
+      & > h3 {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 4rem;
+      }
+
+      & > div {
+        display: flex;
+        gap: 2%;
+        row-gap: 4rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & .developer-card {
+          & p {
+            &:nth-child(2) {
+              font-size: 1.5rem;
+            }
+            &:last-child {
+              font-size: 1.25rem;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}

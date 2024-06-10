@@ -1,0 +1,46 @@
+.book {
+  position: relative;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(46, 196, 182, 1) 100%);
+
+  & > div > div {
+    display: flex;
+    align-items: center;
+
+    & > div {
+      flex: 0 1 50%;
+
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        & p {
+          font-size: 2.25rem;
+          font-weight: 700;
+        }
+
+        & button {
+          text-align: center;
+          color: #fff;
+          background-color: $dark;
+          padding: 1.6rem 1rem;
+          font-size: 3rem;
+          font-weight: 600;
+          border: 0;
+          box-shadow: $secondary 10px 10px;
+          transition: all 0.1s;
+
+          &:hover {
+            box-shadow: $secondary 2px 2px;
+          }
+
+          & span {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
