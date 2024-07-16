@@ -4,6 +4,8 @@
   justify-content: space-between;
   padding-top: 4rem;
   font-size: 1.25rem;
+  z-index: 5;
+  overflow: hidden;
 
   & ul {
     flex: 0 1 50%;

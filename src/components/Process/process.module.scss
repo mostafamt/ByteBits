@@ -1,37 +1,55 @@
 .process {
-  background-color: $dark;
+  // background-color: $dark;
   color: $light;
+  position: relative;
+  margin-top: 8rem;
 
-  &>div>div {
-    padding: 4rem 0;
+  & > div > div {
+    padding-bottom: 4rem;
 
-    &>h2 {
+    & > h2 {
       font-size: 4rem;
-      margin-bottom: 4rem;
+      margin-bottom: 12rem;
 
-      &>span {
+      & > span {
         color: $primary;
       }
     }
 
-    &>div {
+    & > div {
       display: flex;
       justify-content: space-between;
 
       & > div {
         flex: 0 1 20%;
+        position: relative;
+
+        & .number {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(-5rem, -4rem);
+          font-size: 20rem;
+          color: rgba(0, 0, 0, 0.2);
+
+          font-family: "Courier Prime", monospace;
+          font-weight: 700;
+          font-style: normal;
+        }
+
         & > h3 {
           font-size: 1.75rem;
           margin-bottom: 2rem;
           font-weight: 500;
+          height: 4rem;
         }
 
         & > p {
           font-size: 1.25rem;
           font-weight: 300;
+          // text-align: justify;
         }
       }
     }
   }
-
 }

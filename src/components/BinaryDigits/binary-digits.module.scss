@@ -1,0 +1,26 @@
+.binary-digits {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+
+  & > div {
+    transform: rotate(15deg) translate(22rem, -20rem);
+    // width: 80%;
+    height: 20rem;
+    // height: 29rem;
+    overflow: hidden;
+    text-wrap: wrap;
+    word-break: break-all;
+    font-size: 3rem;
+    font-weight: 500;
+
+    background: linear-gradient(to bottom, #eee, #496f8e);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    //   color: rgba(#fff, 0.5);
+  }
+}

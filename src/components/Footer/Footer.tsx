@@ -7,6 +7,7 @@ import Wave3 from '../svgs/Wave3/Wave3';
 import Wave4 from '../svgs/Wave4/Wave4';
 import { usePathname } from 'next/navigation';
 import TeamIcon from '../svgs/TeamIcon/TeamIcon';
+import BinaryDigits from '../BinaryDigits/BinaryDigits';
 
 type Props = {}
 
@@ -17,6 +18,7 @@ const Footer = (props: Props) => {
     <>
       <div style={{ margin: '0rem 0', height: '12rem' }}></div>
       <div className={styles.footer} >
+        <BinaryDigits mode="dark" footer={true} />
         <div className="container">
           <Image
             src="/light-logo.svg"

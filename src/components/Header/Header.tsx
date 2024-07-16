@@ -3,9 +3,10 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import HeaderDark from "./HeaderDark/HeaderDark";
 import HeaderLight from "./HeaderLight/HeaderLight";
+import BinaryDigits from "../BinaryDigits/BinaryDigits";
+import { routes } from "@/routes";
 
 import styles from "./header.module.scss";
-import { routes } from "@/routes";
 
 type Props = {};
 
