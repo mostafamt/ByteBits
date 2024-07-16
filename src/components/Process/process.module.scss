@@ -1,5 +1,4 @@
 .process {
-  // background-color: $dark;
   color: $light;
   position: relative;
   margin-top: 8rem;
@@ -51,5 +50,21 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  .process {
+    & > div > div {
+      & > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 40%;
+        column-gap: 20%;
+        // gap: 40%;
+      }
+    }
+
   }
 }

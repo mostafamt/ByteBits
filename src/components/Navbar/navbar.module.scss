@@ -1,47 +1,145 @@
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 4rem;
-  font-size: 1.25rem;
-  z-index: 5;
-  overflow: hidden;
-
-  & ul {
-    flex: 0 1 50%;
+  & > div {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    font-weight: 500;
+    padding-top: 4rem;
+    font-size: 1.25rem;
+    z-index: 5;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s;
 
-    & a {
-      color: $light;
+    & .main-menu {
+      flex: 0 1 50%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
 
-      &.active {
-        font-weight: 700;
+      & a {
+        color: $light;
+
+        &.active {
+          font-weight: 700;
+        }
+
+        &:hover {
+          font-weight: 700;
+        }
       }
+    }
 
-      &:hover {
-        font-weight: 700;
+    & .button {
+      width: 13.5625rem;
+      height: 3.1875rem;
+      background-color: $primary;
+      color: $light;
+      font-size: 1.25rem;
+
+      font-weight: bold;
+      border-radius: 22px;
+      border-color: transparent;
+
+      &.light {
+        background-color: $dark;
+      }
+      &.dark {
+        background-color: $primary;
+      }
+    }
+
+    & .hamburger {
+      display: none;
+      background-color: transparent;
+      border: none;
+
+      & svg {
+        color: #fff;
+        font-size: 3rem;
       }
     }
   }
 
-  & button {
-    width: 13.5625rem;
-    height: 3.1875rem;
-    background-color: $primary;
-    color: $light;
-    font-size: 1.25rem;
+  & .menu {
+    display: block;
+    color: #fff;
+    list-style: none;
+    // border: 1px solid #fff;
+    // border-radius: 1rem;
+    padding-top: 0;
+    padding: 1rem 0;
 
-    font-weight: bold;
-    border-radius: 22px;
-    border-color: transparent;
 
-    &.light {
-      background-color: $dark;
+    & > li {
+      padding: 0.25rem;
+
+      &:hover {
+        background-color: $light;
+        color: $dark;
+        cursor: pointer;
+      }
+
+      & a {
+        display: block;
+        color: inherit;
+      }
+
     }
-    &.dark {
-      background-color: $primary;
+
+    
+
+  }
+ 
+}
+
+@media (max-width: 1400px) {
+  .nav {
+    & > div {
+      & img {
+        width: 14rem;
+      }
+
+      & .main-menu {
+        & a {
+          font-size: 1rem;
+        }
+      }
+
+      & .button {
+        font-size: 1rem;
+        width: 12rem;
+        height: 2.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    & > div {
+      & img {
+        width: 10rem;
+      }
+
+      & .main-menu {
+        & a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .nav {
+    & > div {
+      & .main-menu {
+        display: none;
+      }
+
+      & .hamburger {
+        display: block;
+      }
     }
   }
 }

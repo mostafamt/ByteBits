@@ -11,6 +11,11 @@
   &>div {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4rem;
   }
 
+}
+
+@media (max-width: 1200px) {
 }

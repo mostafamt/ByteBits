@@ -60,3 +60,21 @@
     }
   }
 }
+
+
+@media(max-width: 1200px){
+  .values {
+    & > div {
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        // grid-template-columns: 1fr;
+
+        & > div:last-child {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}

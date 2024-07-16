@@ -28,3 +28,23 @@
     }
   }
 }
+
+
+
+@media(max-width: 1200px){
+  .talk {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    & > div {
+      &:last-child {
+        & .form {
+          width: 100% !important;
+        }
+      }
+
+    }
+
+  }
+}

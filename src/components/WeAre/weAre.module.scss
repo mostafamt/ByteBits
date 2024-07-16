@@ -1,6 +1,7 @@
 .we-are {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   &>div {
     flex: 0 1 50%;
@@ -27,6 +28,24 @@
         font-weight: 500;
         text-align: justify;
       }
+    }
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .we-are {
+    & img {
+      width: 25rem;
+      height: auto;
+    }
+
+    & h2 {
+      font-size: 2rem !important;
+    }
+
+    & p {
+      font-size: 1rem !important;
     }
   }
 }
