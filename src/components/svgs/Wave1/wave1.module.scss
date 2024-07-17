@@ -1,6 +1,6 @@
 .wave-box {
   position: absolute;
-  top: 0;
+  bottom: -33%;
   left: 0;
   z-index: -1;
   width: 100%;
@@ -11,19 +11,26 @@
   }
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1399.98px) {
   .wave-box {
-    top: 15rem;
+    bottom: -33%;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1199.98px) {
   .wave-box {
-    top: 19rem;
+    bottom: -12%;
   }
 }
-@media (max-width: 950px) {
+
+@media (max-width: 991.98px) {
   .wave-box {
-    top: 26rem;
+    bottom: -10%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .wave-box {
+    bottom: -5%;
   }
 }
