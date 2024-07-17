@@ -3,16 +3,16 @@
   align-items: center;
   flex-wrap: wrap;
 
-  &>div {
+  & > div {
     flex: 0 1 50%;
 
     &:last-child {
-      &>h2 {
+      & > h2 {
         font-size: 4rem;
         // text-align: center;
         margin-bottom: 2rem;
 
-        &>span {
+        & > span {
           &:first-child {
             color: $primary;
           }
@@ -23,7 +23,7 @@
         }
       }
 
-      &>p {
+      & > p {
         font-size: 1.5rem;
         font-weight: 500;
         text-align: justify;
@@ -32,20 +32,79 @@
   }
 }
 
+@media (max-width: 1399.98px) {
+  .we-are {
+    margin: 16rem 0;
+    & img {
+      width: 25rem;
+      height: auto;
+    }
 
-@media (max-width: 1400px) {
+    & > div {
+      &:last-child {
+        & h2 {
+          font-size: 3rem;
+        }
+
+        & p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
   .we-are {
     & img {
       width: 25rem;
       height: auto;
     }
 
-    & h2 {
-      font-size: 2rem !important;
+    & > div {
+      &:last-child {
+        & h2 {
+          font-size: 2rem;
+        }
+
+        & p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .we-are {
+    flex-direction: column;
+
+    & > div {
+      &:last-child {
+        & h2 {
+          text-align: center;
+        }
+
+        & p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .we-are {
+    & img {
+      width: 20rem;
     }
 
-    & p {
-      font-size: 1rem !important;
+    & > div {
+      &:last-child {
+        & h2 {
+          margin-bottom: 1rem;
+        }
+      }
     }
   }
 }
