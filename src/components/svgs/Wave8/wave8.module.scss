@@ -39,3 +39,22 @@
     }
   }
 }
+
+@media (max-width: 767.98px) {
+  .wave-8 {
+    & > img {
+      height: 30rem;
+      width: 30rem;
+      transform: translateY(-35%);
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .wave-8 {
+    & > img {
+      height: 20rem;
+      width: 20rem;
+    }
+  }
+}
