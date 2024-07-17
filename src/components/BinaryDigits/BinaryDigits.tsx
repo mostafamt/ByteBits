@@ -29,20 +29,22 @@ const BinaryDigits = (props: Props) => {
     return str;
   };
 
+  const divStyle = {
+    background: props.footer
+      ? `linear-gradient(to top, #496f8e, #011627)`
+      : props.mode === "dark"
+        ? `linear-gradient(to bottom, #496f8e, #011627)`
+        : `linear-gradient(to bottom, #011627, #32C5B7)`,
+    "-webkit-background-clip": "text",
+    transform: props.footer
+      ? "rotate(-5deg) translate(0, 6rem)"
+      : "rotate(15deg) translate(22rem, -20rem)",
+    height: props.footer ? "18rem" : "29rem",
+  };
+
   return (
     <div className={styles["binary-digits"]}>
-      <div
-        style={{
-          background: props.footer ? `linear-gradient(to top, #496f8e, #011627)` : props.mode === "dark"
-          ? `linear-gradient(to bottom, #496f8e, #011627)`
-          : `linear-gradient(to bottom, #011627, #32C5B7)`,
-          backgroundClip: "text",
-          transform: props.footer ? "rotate(-5deg) translate(0, 6rem)" : "rotate(15deg) translate(22rem, -20rem)",
-          height: props.footer ? '18rem' : '29rem',
-        }}
-      >
-        {digits}
-      </div>
+      <div style={divStyle}>{digits}</div>
     </div>
   );
 };

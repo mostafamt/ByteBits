@@ -7,7 +7,6 @@
 
   & > div {
     transform: rotate(15deg) translate(22rem, -20rem);
-    // width: 80%;
     height: 20rem;
     // height: 29rem;
     overflow: hidden;
@@ -17,10 +16,11 @@
     font-weight: 500;
 
     background: linear-gradient(to bottom, #eee, #496f8e);
+    background: rgb(46, 196, 182);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-
-    //   color: rgba(#fff, 0.5);
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
 
-  &>div {
+  & > div {
     flex: 0 1 50%;
 
     &:first-child {
@@ -15,8 +15,7 @@
       }
 
       & button {
-        width: 21.375rem;
-        height: 5.125rem;
+        padding: 1.2rem 2.2rem;
         border-color: transparent;
         background-color: $dark;
         color: $light;
@@ -24,19 +23,89 @@
         font-weight: 600;
         border-radius: 3.125rem;
 
-        &>span {
+        & > span {
           color: $primary;
         }
       }
-
     }
 
     &:last-child {
       text-align: right;
     }
-
   }
+}
 
+@media (max-width: 1400px) {
+  .get-bussiness {
+    & > div {
+      &:first-child {
+        & h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: 1200px) {
+  .get-bussiness {
+    & > div {
+      &:first-child {
+        & h2 {
+          font-size: 2rem;
+          color: $dark;
+        }
 
+        & button {
+          font-size: 1.6rem;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+
+    & img {
+      width: 25rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .get-bussiness {
+    flex-direction: column;
+    align-items: center;
+    & > div {
+      flex: 0 1 auto;
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h2 {
+          font-size: 1.8rem;
+        }
+
+        & button {
+          align-self: center;
+          font-size: 1rem;
+          padding: 0.8rem 2rem;
+        }
+      }
+    }
+    & img {
+      transform: translateY(-6rem);
+      width: 20rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .get-bussiness {
+    & > div {
+      &:first-child {
+        & h2 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }
