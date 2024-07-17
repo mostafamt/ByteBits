@@ -32,3 +32,33 @@
     }
   }
 }
+
+@media (max-width: 1399.98px) {
+  .welcome {
+    & > div {
+      & h1 {
+        font-size: 3rem;
+      }
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .welcome {
+    & > div {
+      & p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome {
+    justify-content: center;
+    text-align: center;
+  }
+}

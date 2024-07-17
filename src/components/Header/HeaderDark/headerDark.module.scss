@@ -15,3 +15,13 @@
     gap: 4rem;
   }
 }
+
+@media (max-width: 1199.98px) {
+  .header-dark {
+    height: 38rem;
+
+    & > div {
+      gap: 0;
+    }
+  }
+}
