@@ -1,14 +1,15 @@
 import React from "react";
+import Image from "next/image";
+import Wave8 from "@/components/svgs/Wave8/Wave8";
 
 import styles from "./connected.module.scss";
-import Image from "next/image";
 
 type Props = {};
 
 const Connected = (props: Props) => {
   return (
     <div className={styles.connected}>
-      <Image src="/line-2.svg" alt="line-2" width={250} height={250} />
+      <Wave8 />
       <div className="container">
         <h2>
           Internationally <span>Connected</span>

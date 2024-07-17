@@ -1,0 +1,41 @@
+.wave-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  & > img {
+    height: 68rem;
+    width: 68rem;
+    transform: translateY(-40%);
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .wave-8 {
+    & > img {
+      height: 50rem;
+      width: 50rem;
+      transform: translateY(-35%);
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .wave-8 {
+    & > img {
+      height: 40rem;
+      width: 40rem;
+      transform: translateY(-35%);
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .wave-8 {
+    & > img {
+      height: 40rem;
+      width: 40rem;
+      transform: translateY(-35%);
+    }
+  }
+}

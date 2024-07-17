@@ -3,14 +3,14 @@
   color: $dark;
   position: relative;
 
-  & > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 60rem;
-    width: 60rem;
-    transform: translateY(-35%);
-  }
+  // & > img {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 60rem;
+  //   width: 60rem;
+  //   transform: translateY(-35%);
+  // }
 
   & > div {
     & > h2 {
