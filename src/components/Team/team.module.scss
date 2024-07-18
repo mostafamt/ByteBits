@@ -1,4 +1,4 @@
-.our-team {
+.team {
   background: rgb(1, 22, 39);
   background: linear-gradient(
     180deg,
@@ -9,8 +9,8 @@
     rgba(46, 196, 182, 1) 39%,
     rgba(253, 255, 252, 1) 100%
   );
-  color: $light;
-  text-align: center;
+  //   color: $light;
+  //   text-align: center;
   margin-bottom: 4rem;
 
   & > div:first-child {
@@ -22,6 +22,7 @@
     }
 
     & > div:first-child {
+      color: $light;
       display: flex;
       justify-content: flex-end;
       & > h2 {

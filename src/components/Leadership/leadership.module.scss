@@ -1,0 +1,15 @@
+.leadership {
+  & > h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: $light;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  & .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

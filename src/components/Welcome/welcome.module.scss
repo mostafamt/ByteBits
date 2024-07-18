@@ -60,5 +60,25 @@
   .welcome {
     justify-content: center;
     text-align: center;
+
+    & > div {
+      & h1 {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .welcome {
+    & > div {
+      & p {
+        font-weight: 400;
+      }
+    }
   }
 }

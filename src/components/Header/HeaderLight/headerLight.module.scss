@@ -16,3 +16,19 @@
     gap: 4rem;
   }
 }
+
+@media (max-width: 1199.98px) {
+  .header-light {
+    height: 38rem;
+
+    & > div {
+      gap: 0;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header-light {
+    margin-bottom: 0;
+  }
+}
