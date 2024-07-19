@@ -1,7 +1,8 @@
 import React from "react";
+import Wave9 from "../svgs/Wave9/Wave9";
+import Wave10 from "../svgs/Wave10/Wave10";
 
 import styles from "./team.module.scss";
-import Card from "../Card/Card";
 
 type Props = {
   children: React.ReactNode;
@@ -10,13 +11,8 @@ type Props = {
 const Team = (props: Props) => {
   return (
     <div className={styles.team}>
-      <div className="container">
-        <div>
-          <h2>
-            <span>Meet</span> Our <span>team</span>{" "}
-          </h2>
-        </div>
-      </div>
+      <Wave10 />
+      <Wave9 />
       {props.children}
     </div>
   );

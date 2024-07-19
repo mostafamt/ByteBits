@@ -13,3 +13,20 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 991.98px) {
+  .leadership {
+    & .cards {
+      justify-content: space-evenly;
+      row-gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .leadership {
+    & > h3 {
+      font-size: 2rem;
+    }
+  }
+}

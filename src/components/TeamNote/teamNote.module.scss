@@ -1,0 +1,14 @@
+.team-note {
+  padding: 1.8rem 0;
+  background-color: $dark;
+  color: $light;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+  .team-note {
+    font-size: 1rem;
+  }
+}

@@ -1,13 +1,12 @@
 import React from "react";
-import Note from "../Note/Note";
+
+import styles from "./teamNote.module.scss";
 
 type Props = {};
 
 const TeamNote = (props: Props) => {
   return (
-    <div>
-      <Note>Feel like you may fit in? Introduce yourself to us!</Note>
-    </div>
+    <div className={styles["team-note"]}>Feel like you may fit in? Introduce yourself to us!</div>
   );
 };
 

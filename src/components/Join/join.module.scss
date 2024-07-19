@@ -10,3 +10,23 @@
     }
   }
 }
+
+@media (max-width: 991.98px) {
+  .join {
+    & > div {
+      & > h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .join {
+    & > div {
+      & > h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.meet-team {
+  transform: translateY(-20%);
+  padding-bottom: 4rem;
+
+  color: $light;
+  display: flex;
+  justify-content: flex-end;
+  & > h2 {
+    position: relative;
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+
+    & > span {
+      &:first-child {
+        color: $secondary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 1.5rem;
+        transform: translate(-2rem, -1rem);
+      }
+
+      &:last-child {
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .meet-team {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .meet-team {
+    padding-bottom: 2rem;
+
+    & > h2 {
+      font-size: 3rem;
+
+      & > span {
+        &:first-child {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .meet-team {
+    padding-bottom: 0;
+
+    padding-top: 1rem;
+    & > h2 {
+      font-size: 2rem;
+    }
+  }
+}

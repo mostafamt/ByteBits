@@ -1,0 +1,19 @@
+.wave-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  & > img {
+    width: 100%;
+    transform: translate(1%, -50%);
+  }
+}
+
+@media (max-width: 1880px) {
+  .wave-10 {
+    & > img {
+      transform: translate(0%, -50%);
+    }
+  }
+}

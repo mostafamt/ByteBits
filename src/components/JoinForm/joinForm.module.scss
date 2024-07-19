@@ -4,6 +4,7 @@
   border-radius: 1rem;
   padding: 2rem;
   margin: 4rem 0;
+  font-size: 1.6rem;
 
   & .col-2 {
     display: flex;
@@ -47,12 +48,53 @@
       border: 0;
       background-color: $dark;
       color: $light;
-      width: 15rem;
-      height: 3.25rem;
+      padding: 0.25rem 5rem;
       border-radius: 1rem;
       font-size: 2.125rem;
       font-weight: 700;
       text-transform: capitalize;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .join-form {
+    & .submit {
+      & button {
+        padding: 0.5rem 4rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .join-form {
+    font-size: 1.2rem;
+
+    & .form-control {
+      gap: 0;
+      margin-bottom: 3rem;
+    }
+
+    & .col-2 {
+      flex-direction: column;
+      gap: 0;
+
+      & > div {
+        align-self: stretch;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .join-form {
+    & .submit {
+      & button {
+        padding: 0.5rem 3.4rem;
+        font-size: 1rem;
+      }
     }
   }
 }
