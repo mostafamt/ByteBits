@@ -1,8 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import TeamNote from "../TeamNote/TeamNote";
 
 import styles from "./offer.module.scss";
-import Image from "next/image";
-import Note from "../Note/Note";
 
 type Props = {};
 
@@ -30,7 +30,7 @@ const Offer = (props: Props) => {
           </div>
         </div>
       </div>
-      <Note>&quot;Innovation is the engine that powers IT solutions.&quot;</Note>
+      <TeamNote>&quot;Innovation is the engine that powers IT solutions.&quot;</TeamNote>
     </>
   );
 };

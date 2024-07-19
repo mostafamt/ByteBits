@@ -19,7 +19,7 @@ const page = (props: Props) => {
         <MeetTeam />
         <Leadership />
         <Developers />
-        <TeamNote />
+        <TeamNote>Feel like you may fit in? Introduce yourself to us!</TeamNote>
       </Team>
       <Join />
     </>
