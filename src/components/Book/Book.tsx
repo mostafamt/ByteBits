@@ -16,7 +16,7 @@ const Book = (props: Props) => {
             <Image src={"/book.svg"} alt="book" width={400} height={400} />
           </div>
           <div>
-            <p>"Ready to elevate your business?"</p>
+            <p>&quot;Ready to elevate your business?&quot;</p>
             <button>
               <span>Book</span> a meeting
             </button>

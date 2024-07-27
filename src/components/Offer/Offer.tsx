@@ -22,7 +22,8 @@ const Offer = (props: Props) => {
               excellent user experiences across all platforms. Our team provides support and
               maintenance to keep your systems running smoothly, minimizing downtime and maximizing
               productivity. Our commitment to customer satisfaction and personalized support drives
-              everything we do. We're here to help you focus on what matters most—your business.
+              everything we do. We&apos;re here to help you focus on what matters most—your
+              business.
             </p>
           </div>
           <div>

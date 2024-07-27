@@ -37,7 +37,7 @@ const Process = (props: Props) => {
           </h2>
           <div>
             {data.map((item, idx) => (
-              <div>
+              <div key={idx}>
                 <div className={styles.number}>{idx + 1}</div>
                 <h3>{item.header}</h3>
                 <p>{item.text}</p>
