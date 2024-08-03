@@ -17,7 +17,7 @@ export const routes = [
     label: "Contact us",
     href: "/contact",
     theme: "light",
-    header: "Talk to us!",
+    header: "",
     paragraph: "",
   },
   {

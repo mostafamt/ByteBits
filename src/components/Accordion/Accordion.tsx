@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import AccordionBox from "@/components/AccordionBox/AccordionBox";
 import AccordionContent from "@/components/AccordionContent/AccordionContent";
@@ -7,9 +8,9 @@ type Props = {};
 const services = [
   {
     header: (
-      <h3>
+      <>
         <span>Web</span> Development
-      </h3>
+      </>
     ),
     text: (
       <p>
@@ -23,9 +24,9 @@ const services = [
   },
   {
     header: (
-      <h3>
+      <>
         <span>App</span> Development
-      </h3>
+      </>
     ),
     text: (
       <p>
@@ -40,7 +41,7 @@ const services = [
     image: "/service-2.svg",
   },
   {
-    header: <h3>Cyber Security</h3>,
+    header: <>Cyber Security</>,
     text: (
       <p>
         My money&apos;s in that office, right? If she start giving me some bullshit about it
@@ -54,7 +55,7 @@ const services = [
     image: "/service-3.svg",
   },
   {
-    header: <h3>AI Integration</h3>,
+    header: <>AI Integration</>,
     text: (
       <p>
         Normally, both your asses would be dead as fucking fried chicken, but you happen to pull
@@ -78,13 +79,28 @@ const services = [
 ];
 
 const Accordion = (props: Props) => {
+  const [open, setOpen] = React.useState(Array(services.length).fill(false));
+
+  const handleSwitch = (idx: number) => {
+    console.log("handleSwitch");
+    setOpen(prevState => {
+      const newState = [...prevState];
+      newState[idx] = !newState[idx];
+      return newState;
+    });
+  };
+
   return (
     <div className="container">
       <ul>
         <li>
-          {services.map(service => (
-            <AccordionBox key={service.image}>
-              <AccordionContent service={service} />
+          {services.map((service, idx) => (
+            <AccordionBox key={service.image} open={open[idx]} toggle={() => handleSwitch(idx)}>
+              <AccordionContent
+                service={service}
+                open={open[idx]}
+                toggle={() => handleSwitch(idx)}
+              />
             </AccordionBox>
           ))}
         </li>

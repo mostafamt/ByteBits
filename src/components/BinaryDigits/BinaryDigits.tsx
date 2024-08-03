@@ -35,7 +35,7 @@ const BinaryDigits = (props: Props) => {
       : props.mode === "dark"
         ? `linear-gradient(to bottom, #496f8e, #011627)`
         : `linear-gradient(to bottom, #011627, #32C5B7)`,
-    "-webkit-background-clip": "text",
+    WebkitBackgroundClip: "text",
     transform: props.footer
       ? "rotate(-5deg) translate(0, 6rem)"
       : "rotate(15deg) translate(22rem, -20rem)",

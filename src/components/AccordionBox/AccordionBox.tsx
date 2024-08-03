@@ -1,17 +1,19 @@
 "use client";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import styles from "./accordionBox.module.scss";
 
 type Props = {
   children: React.ReactNode;
+  open: boolean;
+  toggle: () => void;
 };
 
 const AccordionBox = (props: Props) => {
-  const [open, setOpen] = React.useState(false);
+  const { open, toggle } = props;
 
   const onClickExpand = () => {
-    setOpen(prevState => !prevState);
+    toggle();
   };
 
   return (

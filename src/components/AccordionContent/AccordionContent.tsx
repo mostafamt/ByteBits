@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { Dispatch, SetStateAction } from "react";
 
 import styles from "./accordionContent.module.scss";
 import Image from "next/image";
@@ -9,15 +10,27 @@ type Props = {
     text: React.ReactNode;
     image: string;
   };
+  open: boolean;
+  toggle: () => void;
 };
 
+// style={{ color: open ? "#011627" : "#fff" }}
 const AccordionContent = (props: Props) => {
-  const { service } = props;
+  const { service, open } = props;
+
+  const css = `
+    color: ${open} ? "#011627" : "#fff"
+    span {
+        color: #f00;
+    }`;
 
   return (
     <div className={styles["accordion-content"]}>
       <div>
-        {service.header}
+        <h3>
+          <style>{css}</style>
+          {service.header}
+        </h3>
         {service.text}
       </div>
       <div>

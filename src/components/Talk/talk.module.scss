@@ -1,6 +1,23 @@
 .talk {
-  transform: translateY(-22rem);
+  transform: translateY(-10rem);
   display: flex;
+
+  &_header {
+    font-size: 4rem;
+    font-weight: 600;
+    color: $dark;
+  }
+
+  & .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $dark;
+    margin-bottom: 2rem;
+
+    & > span {
+      color: $primary;
+    }
+  }
 
   & > div {
     flex: 0 1 50%;
@@ -8,6 +25,9 @@
     &:first-child {
       & > div {
         & ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
           & > li {
             display: flex;
             align-items: center;
@@ -29,22 +49,45 @@
   }
 }
 
-
-
-@media(max-width: 1200px){
+@media (max-width: 1200px) {
   .talk {
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
     width: 100%;
 
     & > div {
+      width: 100%;
       &:last-child {
+        display: flex;
+        justify-content: center;
+
         & .form {
           width: 100% !important;
         }
       }
+    }
+  }
+}
 
+@media (max-width: 991.98px) {
+  .talk {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .talk {
+    &_header {
+      font-size: 2.4rem;
     }
 
+    & .img {
+      width: 20rem;
+    }
+
+    & .line {
+      width: 100%;
+    }
   }
 }

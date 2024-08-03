@@ -11,9 +11,13 @@ const Talk = (props: Props) => {
     <div className="container">
       <div className={styles.talk}>
         <div>
-          <Image src="/talk.svg" alt="talk" width={400} height={400} />
+          <p className={styles.talk_header}>Talk to us!</p>
+          <Image className={styles.img} src="/talk.svg" alt="talk" width={400} height={400} />
           <div>
-            <p>Fill the form or contact us externally</p>
+            <p className={styles.title}>
+              Fill the form
+              <br /> or <span>contact us</span> externally
+            </p>
             <ul>
               <li>
                 <Image src="/whatsapp.svg" alt="whatsapp" width={30} height={30} />
@@ -27,23 +31,23 @@ const Talk = (props: Props) => {
           </div>
 
           <div>
-            <Image src="/line.svg" alt="line" width={400} height={100} />
+            <Image className={styles.line} src="/line.svg" alt="line" width={400} height={100} />
           </div>
 
           <div>
-            <p>Find us on:</p>
+            <p className={styles.title}>Find us on:</p>
             <ul>
               <li>
                 <Image src="/linkedin.svg" alt="linkedin" width={30} height={30} />
-                <p>contact@bytebits.io</p>
+                <p>@ByteBits</p>
               </li>
               <li>
                 <Image src="/instagram.svg" alt="instagram" width={30} height={30} />
-                <p>contact@bytebits.io</p>
+                <p>@ByteBitsOfficial</p>
               </li>
               <li>
                 <Image src="/x.svg" alt="x" width={30} height={30} />
-                <p>contact@bytebits.io</p>
+                <p>@ByteBitsOfficial</p>
               </li>
             </ul>
           </div>
