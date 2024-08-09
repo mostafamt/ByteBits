@@ -17,7 +17,7 @@ const HeaderDark = (props: Props) => {
         <BinaryDigits mode="dark" footer={false} />
         <div className="container h-full">
           <Navbar theme="dark" />
-          <Welcome />
+          <Welcome style={{}} />
         </div>
         <Wave1 />
         <Wave2 />
