@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 import styles from "./navbar.module.scss";
 import Link from "next/link";
+import Drawer from "@/components/Drawer/Drawer";
 
 type Props = {
   theme: string | "";
@@ -17,14 +18,31 @@ const Navbar = (props: Props) => {
 
   const [show, setShow] = React.useState(false);
 
-  const getRoutes = () => {
-    return routes.map(route => (
+  const getRoutes = (withButton = false) => {
+    let newRoutes = [];
+
+    newRoutes = routes.map(route => (
       <li key={route.href}>
         <a href={route.href} className={pathname === route.href ? styles.active : ""}>
           {route.label}
         </a>
       </li>
     ));
+
+    if (withButton) {
+      newRoutes = [
+        ...newRoutes,
+        <li>
+          <button>Become a client</button>
+        </li>,
+      ];
+    }
+
+    return newRoutes;
+  };
+
+  const onClickDrawer = () => {
+    setShow(prevState => !prevState);
   };
 
   return (
@@ -41,11 +59,12 @@ const Navbar = (props: Props) => {
           </Link>
           <ul className={styles["main-menu"]}>{getRoutes()}</ul>
           <button className={`${styles.button} ${styles[`${theme}`]}`}>Become a client</button>
-          <button className={styles.hamburger} onClick={() => setShow(prevState => !prevState)}>
+          <button className={styles.hamburger} onClick={onClickDrawer}>
             <IoMenu />
           </button>
         </div>
-        {show && <ul className={styles.menu}>{getRoutes()}</ul>}
+
+        <Drawer show={show} toggle={onClickDrawer} getRoutes={getRoutes} />
       </nav>
     </>
   );

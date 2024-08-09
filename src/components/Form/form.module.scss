@@ -46,6 +46,12 @@
   }
 }
 
+@include respond(desktop) {
+  .form {
+    width: 100%;
+  }
+}
+
 @media (max-width: 991.98px) {
   .form {
     & .submit {

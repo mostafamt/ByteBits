@@ -1,6 +1,6 @@
 .nav {
   z-index: 5;
-  & > div {
+  & > div:first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,11 +82,16 @@
       }
     }
   }
+
+  & .active {
+    // background-color: red;
+    font-weight: 700;
+  }
 }
 
 @media (max-width: 1400px) {
   .nav {
-    & > div {
+    & > div:first-child {
       & img {
         width: 14rem;
       }
@@ -108,7 +113,7 @@
 
 @media (max-width: 1200px) {
   .nav {
-    & > div {
+    & > div:first-child {
       & img {
         width: 10rem;
       }
@@ -124,13 +129,17 @@
 
 @media (max-width: 992px) {
   .nav {
-    & > div {
+    & > div:first-child {
       gap: 1rem;
       & > a {
         flex: 1 1 auto;
       }
 
       & .main-menu {
+        display: none;
+      }
+
+      & .button {
         display: none;
       }
 

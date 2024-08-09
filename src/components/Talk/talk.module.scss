@@ -49,7 +49,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@include respond(desktop) {
   .talk {
     flex-direction: column;
     align-items: center;
