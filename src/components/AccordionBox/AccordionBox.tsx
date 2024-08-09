@@ -18,9 +18,7 @@ const AccordionBox = (props: Props) => {
 
   return (
     <div className={`${styles["accordion-box"]} ${open && styles["open"]}`}>
-      <button onClick={onClickExpand}>
-        <IoIosArrowDown />
-      </button>
+      <button onClick={onClickExpand}>{open ? <IoIosArrowUp /> : <IoIosArrowDown />}</button>
       <div>{props.children}</div>
     </div>
   );

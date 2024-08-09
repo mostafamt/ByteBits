@@ -6,6 +6,13 @@
   justify-content: space-between;
   color: $light;
 
+  max-height: 2000px;
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+
   & > div {
     &:first-child {
       flex: 0 1 60%;
@@ -14,9 +21,9 @@
         font-size: 4rem;
         margin-bottom: 4rem;
 
-        // & > span {
-        //     color: $primary;
-        // }
+        & > span {
+          color: $primary;
+        }
       }
 
       & > p {
@@ -25,6 +32,64 @@
     }
     &:last-child {
       flex: 0 1 30%;
+    }
+  }
+}
+
+@include respond(desktop) {
+  .accordion-content {
+    & > div {
+      &:first-child {
+        & > h3 {
+          font-size: 3rem;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@include respond(tab-land) {
+  .accordion-content {
+    flex-direction: column;
+    align-items: center;
+    & > div {
+      &:first-child {
+        order: 2;
+        & > h3 {
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        & > p {
+          font-size: 1rem;
+        }
+      }
+      &:last-child {
+        & img {
+          width: 220px;
+          height: 220px;
+        }
+      }
+    }
+  }
+}
+
+@include respond(phone) {
+  .accordion-content {
+    & > div {
+      &:first-child {
+        & > h3 {
+          font-size: 1.6rem;
+        }
+      }
+
+      &:last-child {
+        & img {
+          width: 200px;
+          height: 200px;
+        }
+      }
     }
   }
 }

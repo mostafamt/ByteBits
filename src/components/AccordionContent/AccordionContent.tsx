@@ -1,8 +1,13 @@
 "use client";
 import React, { Dispatch, SetStateAction } from "react";
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+import Image from "next/image";
+
+import type { SerializedStyles } from "@emotion/serialize";
+import type { DOMAttributes } from "react";
 
 import styles from "./accordionContent.module.scss";
-import Image from "next/image";
 
 type Props = {
   service: {
@@ -14,21 +19,29 @@ type Props = {
   toggle: () => void;
 };
 
-// style={{ color: open ? "#011627" : "#fff" }}
+declare module "react" {
+  interface HTMLAttributes<T> extends DOMAttributes<T> {
+    css?: SerializedStyles | undefined;
+  }
+}
+
 const AccordionContent = (props: Props) => {
   const { service, open } = props;
 
-  const css = `
-    color: ${open} ? "#011627" : "#fff"
-    span {
-        color: #f00;
-    }`;
+  const style = `
+            & > span {
+              color: ${open ? "#011627 !important" : "#2ec4b6"};
+            }
+          `;
 
   return (
     <div className={styles["accordion-content"]}>
       <div>
-        <h3>
-          <style>{css}</style>
+        <h3
+          css={css`
+            ${style}
+          `}
+        >
           {service.header}
         </h3>
         {service.text}
