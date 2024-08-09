@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./join.module.scss";
-import JoinForm from "../JoinForm/JoinForm";
+import JoinForm from "../Forms/JoinForm/JoinForm";
 
 type Props = {};
 

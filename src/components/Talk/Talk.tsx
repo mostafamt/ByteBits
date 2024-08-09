@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./talk.module.scss";
 import Image from "next/image";
-import Form from "../Form/Form";
+import ContactForm from "../Forms/ContactForm/ContactForm";
 import Line1 from "@/components/svgs/Line1/Line1";
 
 type Props = {};
@@ -55,7 +55,7 @@ const Talk = (props: Props) => {
           </div>
         </div>
         <div>
-          <Form />
+          <ContactForm />
         </div>
       </div>
     </div>
