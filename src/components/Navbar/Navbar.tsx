@@ -32,7 +32,7 @@ const Navbar = (props: Props) => {
     if (withButton) {
       newRoutes = [
         ...newRoutes,
-        <li>
+        <li key="become-a-client">
           <button>Become a client</button>
         </li>,
       ];
