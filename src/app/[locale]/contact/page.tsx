@@ -4,6 +4,8 @@ import React from "react";
 
 type Props = {};
 
+// some comment to trigger
+
 const Contact = (props: Props) => {
   return (
     <>
