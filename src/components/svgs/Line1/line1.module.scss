@@ -1,17 +1,49 @@
 .line-1 {
   position: absolute;
-  top: 38%;
-  left: 16%;
+  top: -145%;
+  left: 32%;
+  // top: 38%;
+  // left: 31%;
   //   transform: translate(0, 40%);
+}
+
+:dir(rtl) {
+  .line-1 {
+    transform: rotateY(180deg);
+    left: 17%;
+  }
+
+  @include respond(large-desktop) {
+    .line-1 {
+      top: -150%;
+      left: 4%;
+    }
+  }
+
+  @include respond(desktop) {
+    .line-1 {
+      top: -115%;
+      left: 56%;
+    }
+  }
+
+  @include respond(tab-land) {
+    .line-1 {
+      left: 43%;
+    }
+  }
+
+  @include respond(phone) {
+    .line-1 {
+      left: 20%;
+    }
+  }
 }
 
 @include respond(large-desktop) {
   .line-1 {
     top: 41%;
     left: 19%;
-    & > svg {
-      width: 200px;
-    }
   }
 }
 

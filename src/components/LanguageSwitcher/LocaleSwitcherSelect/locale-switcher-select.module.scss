@@ -1,0 +1,16 @@
+.select {
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+
+}

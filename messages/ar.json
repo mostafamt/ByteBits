@@ -1,0 +1,39 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇪🇬 العربية} en {🇺🇸 الإنجليزية} other {Unknown}}"
+  },
+  "home": {
+    "header": "أهلا.",
+    "paragraph": "أنا أحب الله، أحبك، أحب الجميع!",
+    "label": "الرئيسية"
+  },
+  "about": {
+    "header": "About.",
+    "paragraph": "Meet ByteBits your next caretakers",
+    "label": "معلومات عنا"
+  },
+  "contact": {
+    "header": "",
+    "paragraph": "",
+    "label": "تواصل معنا"
+  },
+  "projects": {
+    "header": "Our projects",
+    "paragraph": "Built with dedication, delivered with care.",
+    "label": "المشاريع"
+  },
+  "services": {
+    "header": "Welcome.",
+    "paragraph": "I love god, I love you, I love all!",
+    "label": "الخدمات"
+  },
+  "teams": {
+    "header": "The brains behind the magic",
+    "paragraph": "From all around the world, united by innovation.",
+    "label": "الفريق"
+  },
+  "client": {
+    "become": "كن عميلا"
+  }
+}

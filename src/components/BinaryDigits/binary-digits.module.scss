@@ -7,6 +7,8 @@
 
   & > div {
     transform: rotate(15deg) translate(22rem, -20rem);
+    -webkit-background-clip: text;
+
     height: 20rem;
     // height: 29rem;
     overflow: hidden;
@@ -18,9 +20,41 @@
     background: linear-gradient(to bottom, #eee, #496f8e);
     background: rgb(46, 196, 182);
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-background-clip: text;
     color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text !important;
+
+    &.footer {
+      transform: rotate(-5deg) translate(0, 6rem);
+      background: linear-gradient(to top, #496f8e, #011627) !important;
+      height: 18rem;
+      background-color: text;
+      -webkit-background-clip: text !important;
+    }
+
+    &.header-light {
+      transform: rotate(15deg) translate(22rem, -20rem);
+      height: 29rem;
+      background: linear-gradient(to bottom, #011627, #32c5b7);
+    }
+
+    &.header-dark {
+      transform: rotate(15deg) translate(22rem, -20rem);
+      height: 29rem;
+      background: linear-gradient(to bottom, #496f8e, #011627);
+    }
+  }
+}
+
+:dir(rtl) {
+  .binary-digits {
+    left: 0;
+    & > div {
+      transform: rotate(-15deg) translate(-22rem, -20rem) !important;
+
+      &.footer {
+        transform: rotate(5deg) translate(0, 6rem) !important;
+      }
+    }
   }
 }

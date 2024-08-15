@@ -11,3 +11,11 @@
     height: 100%;
   }
 }
+
+:dir(rtl) {
+  .wave-7 {
+    & img {
+      transform: rotateY(180deg);
+    }
+  }
+}
