@@ -78,3 +78,23 @@
 
   }
 }
+
+@media (max-width: 500px) {
+  .values {
+
+    margin: 2rem 0 !important;
+    > div {
+      width: 90% !important;
+      text-align: left !important;
+      margin: 1rem !important;
+      &:first-child {
+        h2 {
+          font-size: 3.2rem !important;
+        }
+      }
+      &:last-child >div {
+        text-align: left !important;
+      }
+    }
+  }
+}

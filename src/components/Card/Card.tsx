@@ -11,8 +11,8 @@ const Card = (props: Props) => {
       <Image
         src="/avatar.png"
         alt="logo"
-        width={150}
-        height={150}
+        width={200}
+        height={200}
       />
       <h4>K. Minai</h4>
       <p>Chief Queef</p>

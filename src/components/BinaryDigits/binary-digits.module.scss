@@ -4,6 +4,8 @@
   right: 0;
   z-index: 0;
   overflow: hidden;
+  font-family: "Space Mono", monospace;
+
 
   & > div {
     transform: rotate(15deg) translate(22rem, -20rem);

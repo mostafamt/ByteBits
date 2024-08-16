@@ -39,7 +39,7 @@ const BinaryDigits = (props: Props) => {
     transform: props.footer
       ? "rotate(-5deg) translate(0, 6rem)"
       : "rotate(15deg) translate(22rem, -20rem)",
-    height: props.footer ? "18rem" : "29rem",
+    height: props.footer ? "18rem" : "39rem",
   };
 
   return (

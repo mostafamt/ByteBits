@@ -28,11 +28,17 @@
 
       & > p {
         font-size: 1.5rem;
+        @media (min-width: 800px) {
+          font-size: 1.3rem;
+        }
       }
     }
     &:last-child {
       flex: 0 1 30%;
     }
+  }
+  .paragraph {
+    line-height: 1.2;
   }
 }
 

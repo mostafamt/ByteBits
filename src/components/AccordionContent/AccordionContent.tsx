@@ -34,6 +34,7 @@ const AccordionContent = (props: Props) => {
             }
           `;
 
+
   return (
     <div className={styles["accordion-content"]}>
       <div>
@@ -44,7 +45,7 @@ const AccordionContent = (props: Props) => {
         >
           {service.header}
         </h3>
-        {service.text}
+        <p className={styles.paragraph}>{open ? service.text : service.text?.slice(0, 300) + "..."}</p>
       </div>
       <div>
         <Image src={service.image} alt={service.image} width={250} height={250} />

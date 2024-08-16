@@ -8,22 +8,22 @@ type Props = {};
 
 const data = [
   {
-    image: "/project-1.png",
+    image: "/projects/6.jpg",
   },
   {
-    image: "/project-2.png",
+    image: "/projects/2.webp",
   },
   {
-    image: "/project-3.png",
+    image: "/projects/1.jpg",
   },
   {
-    image: "/project-4.png",
+    image: "/projects/4.jpg",
   },
   {
-    image: "/project-5.png",
+    image: "/projects/3.webp",
   },
   {
-    image: "/project-6.png",
+    image: "/projects/5.jpg",
   },
 ];
 

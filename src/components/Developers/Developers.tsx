@@ -54,16 +54,17 @@ const Developers = (props: Props) => {
       <div className={styles.header}>
         <h3>Developers</h3>
         <select name="developer" id="developer">
+          <option value="front-end">Choose role...</option>
           <option value="front-end">Front-End</option>
           <option value="front-end">Back-End</option>
           <option value="software-engineer">Software Enginner</option>
         </select>
       </div>
-      <div>
+      <div className={styles['dev-body']}>
         {devlopers.map(developer => (
           <div key={developer.name} className={styles["developer-card"]}>
-            <Image src={developer.image} alt={developer.name} width={250} height={250} />
-            <p>{developer.name}</p>
+            <Image src={developer.image} alt={developer.name} width={300} height={300} />
+            <h3>{developer.name}</h3>
             <p>{developer.title}</p>
           </div>
         ))}
