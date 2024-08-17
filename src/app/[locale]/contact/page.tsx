@@ -4,7 +4,7 @@ import React from "react";
 
 type Props = {};
 
-// some comment to trigger
+// some comment to test
 
 const Contact = (props: Props) => {
   return (
