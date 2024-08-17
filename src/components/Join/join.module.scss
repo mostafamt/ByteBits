@@ -1,4 +1,5 @@
 .join {
+  position: relative;
   & > div {
     & > h2 {
       font-size: 4rem;
@@ -8,6 +9,11 @@
         color: $primary;
       }
     }
+  }
+  .arrow {
+    position: absolute;
+    top: -50px;
+    right: 0;
   }
 }
 
