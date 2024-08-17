@@ -1,12 +1,11 @@
 .binary-digits {
   position: absolute;
-  top: 0;
+  top: -7rem;
   right: 0;
+  left: -100rem;
   z-index: 0;
   overflow: hidden;
-  font-family: "Space Mono", monospace;
-
-
+  font-family: "monospace", monospace;
   & > div {
     transform: rotate(15deg) translate(22rem, -20rem);
     height: 20rem;
@@ -15,14 +14,48 @@
     text-wrap: wrap;
     word-break: break-all;
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 700;
+    line-height: 80%;
 
-    background: linear-gradient(to bottom, #eee, #496f8e);
-    background: rgb(46, 196, 182);
+    // background: linear-gradient(to bottom, #eee, &primary);
+    // background: $primary;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+}
+.binary-digits-footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+  font-family: "monospace", monospace;
+  & > div {
+    transform: rotate(15deg) translate(22rem, -20rem);
+    height: 20rem;
+    // height: 29rem;
+    overflow: hidden;
+    text-wrap: wrap;
+    word-break: break-all;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 80%;
+
+    // background: linear-gradient(to bottom, #eee, &primary);
+    // background: $primary;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
   }
 }
