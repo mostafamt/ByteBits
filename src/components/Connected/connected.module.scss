@@ -3,6 +3,10 @@
   color: $dark;
   position: relative;
 
+  .img {
+    z-index: -10;
+  }
+
   & > div {
     & > h2 {
       text-align: center;

@@ -20,7 +20,24 @@ const Header = (props: Props) => {
     return item?.theme;
   };
 
-  return getTheme() === "dark" ? <HeaderDark /> : <HeaderLight />;
+  // return getTheme() === "dark" ? (
+  //   <>
+  //     <HeaderDark />
+  //   </>
+  // ) : (
+  //   <HeaderLight />
+  // );
+
+  return (
+    <>
+      <section style={getTheme() === "dark" ? {} : { display: "none" }}>
+        <HeaderDark />
+      </section>
+      <section style={getTheme() === "dark" ? { display: "none" } : {}}>
+        <HeaderLight />
+      </section>
+    </>
+  );
 };
 
 export default Header;

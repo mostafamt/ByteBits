@@ -12,8 +12,9 @@ import styles from "./accordionContent.module.scss";
 type Props = {
   service: {
     header: React.ReactNode;
-    text: React.ReactNode;
     image: string;
+    openText: string;
+    closedText: string;
   };
   open: boolean;
   toggle: () => void;
@@ -34,7 +35,6 @@ const AccordionContent = (props: Props) => {
             }
           `;
 
-
   return (
     <div className={styles["accordion-content"]}>
       <div>
@@ -45,7 +45,7 @@ const AccordionContent = (props: Props) => {
         >
           {service.header}
         </h3>
-        <p className={styles.paragraph}>{open ? service.text : service.text?.slice(0, 300) + "..."}</p>
+        <p className={styles.paragraph}>{open ? service.openText : service.closedText}</p>
       </div>
       <div>
         <Image src={service.image} alt={service.image} width={250} height={250} />

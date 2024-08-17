@@ -2,49 +2,49 @@
 import React from "react";
 
 import styles from "./binary-digits.module.scss";
-
+import useShiftingStrings from "./useShiftingStrings";
 type Props = {
   mode: string;
   footer: boolean;
 };
 
 const BinaryDigits = (props: Props) => {
-  const [digits, setDigits] = React.useState("");
-
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      console.log("This will run every second!");
-      const newDigits = generateRandomBinaryDigits(5000);
-      setDigits(newDigits);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const generateRandomBinaryDigits = (length: number) => {
-    let str = "";
-    for (let i = 0; i < length; i++) {
-      const rand = Math.floor(Math.random() * 2);
-      str = str + rand;
-    }
-    return str;
-  };
+  const binaryStrings = useShiftingStrings("10");
 
   const divStyle = {
     background: props.footer
-      ? `linear-gradient(to top, #496f8e, #011627)`
+      ? `linear-gradient(to top, rgba(100, 100, 100, 0.5) -30%, rgba(1, 22, 39, 0.21) 70%)`
       : props.mode === "dark"
-        ? `linear-gradient(to bottom, #496f8e, #011627)`
-        : `linear-gradient(to bottom, #011627, #32C5B7)`,
+        ? `linear-gradient(to bottom, rgba(100, 100, 100, 0.5) -30%, rgba(1, 22, 39, 0.21) 70%)`
+        : `linear-gradient(to bottom, rgba(1, 22, 39, 0.4) -30%, rgba(50, 197, 183, 0) 70%)`,
     WebkitBackgroundClip: "text",
     transform: props.footer
       ? "rotate(-5deg) translate(0, 6rem)"
       : "rotate(15deg) translate(22rem, -20rem)",
     height: props.footer ? "18rem" : "39rem",
+    top: props.footer ? "0 !important" : "",
+    left: props.footer ? "0 !important" : "",
   };
 
-  return (
+  return props.footer ? (
+    <div className={styles["binary-digits-footer"]}>
+      <div style={divStyle}>
+        {binaryStrings.map((bs, index) => (
+          <span style={{ animationDelay: `${bs.delay}ms` }} key={index}>
+            {bs.string}
+          </span>
+        ))}
+      </div>
+    </div>
+  ) : (
     <div className={styles["binary-digits"]}>
-      <div style={divStyle}>{digits}</div>
+      <div style={divStyle}>
+        {binaryStrings.map((bs, index) => (
+          <span style={{ animationDelay: `${bs.delay}ms` }} key={index}>
+            {bs.string}
+          </span>
+        ))}
+      </div>
     </div>
   );
 };
