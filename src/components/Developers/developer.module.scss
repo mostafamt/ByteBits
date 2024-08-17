@@ -39,6 +39,8 @@
   .dev-body {
     overflow-y: auto;
     max-height: 700px;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
     &::-webkit-scrollbar {
       width: 8px;
     }
@@ -58,6 +60,14 @@
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
       background: $light;
+    }
+
+    @media (max-width: 991.98px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
