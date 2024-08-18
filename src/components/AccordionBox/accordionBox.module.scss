@@ -27,3 +27,19 @@
     height: auto;
   }
 }
+
+:dir(rtl) {
+  .accordion-box {
+    & button {
+      right: 95%;
+    }
+  }
+
+  @include respond(phone) {
+    .accordion-box {
+      & button {
+        right: 86%;
+      }
+    }
+  }
+}

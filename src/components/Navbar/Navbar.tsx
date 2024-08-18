@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { routes } from "@/routes";
 import { IoMenu } from "react-icons/io5";
-import { usePathname } from "next/navigation";
+import LanguageSwitcher from "@/components/LanguageSwitcher/LanguageSwitcher";
+import Drawer from "@/components/Drawer/Drawer";
+import { Link, usePathname } from "@/navigation";
 
 import styles from "./navbar.module.scss";
-import Link from "next/link";
-import Drawer from "@/components/Drawer/Drawer";
+import { useTranslations } from "next-intl";
 
 type Props = {
   theme: string | "";
@@ -15,7 +16,7 @@ type Props = {
 const Navbar = (props: Props) => {
   const pathname = usePathname();
   const { theme } = props;
-
+  const t = useTranslations();
   const [show, setShow] = React.useState(false);
 
   const getRoutes = (withButton = false) => {
@@ -23,9 +24,9 @@ const Navbar = (props: Props) => {
 
     newRoutes = routes.map(route => (
       <li key={route.href}>
-        <a href={route.href} className={pathname === route.href ? styles.active : ""}>
-          {route.label}
-        </a>
+        <Link href={route.href} className={pathname === route.href ? styles.active : ""}>
+          {t(route.label)}
+        </Link>
       </li>
     ));
 
@@ -33,7 +34,8 @@ const Navbar = (props: Props) => {
       newRoutes = [
         ...newRoutes,
         <li key="become-a-client">
-          <button>Become a client</button>
+          <button>{t("home.label")}</button>
+          <span>here</span>
         </li>,
       ];
     }
@@ -58,10 +60,11 @@ const Navbar = (props: Props) => {
             />
           </Link>
           <ul className={styles["main-menu"]}>{getRoutes()}</ul>
-          <button className={`${styles.button} ${styles[`${theme}`]}`}>Become a client</button>
+          <button className={`${styles.button} ${styles[`${theme}`]}`}>{t("client.become")}</button>
           <button className={styles.hamburger} onClick={onClickDrawer}>
             <IoMenu />
           </button>
+          <LanguageSwitcher />
         </div>
 
         <Drawer show={show} toggle={onClickDrawer} getRoutes={getRoutes} />

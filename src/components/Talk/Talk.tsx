@@ -14,11 +14,11 @@ const Talk = (props: Props) => {
         <div>
           <p className={styles.talk_header}>Talk to us!</p>
           <Image className={styles.img} src="/talk.svg" alt="talk" width={400} height={400} />
-          <Line1 />
           <div>
             <p className={styles.title}>
               Fill the form
               <br /> or <span>contact us</span> externally
+              <Line1 />
             </p>
             <ul>
               <li>

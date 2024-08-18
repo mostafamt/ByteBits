@@ -1,3 +1,4 @@
+import Header from "@/components/Header/Header";
 import Meet from "@/components/Meet/Meet";
 import Offer from "@/components/Offer/Offer";
 import Story from "@/components/Story/Story";
@@ -9,6 +10,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
+      <Header />
       <Story />
       <Offer />
       <Values />

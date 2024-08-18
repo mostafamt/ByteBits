@@ -8,6 +8,8 @@
   font-family: "monospace", monospace;
   & > div {
     transform: rotate(15deg) translate(22rem, -20rem);
+    -webkit-background-clip: text;
+
     height: 20rem;
     // height: 29rem;
     overflow: hidden;
@@ -20,9 +22,6 @@
     // background: linear-gradient(to bottom, #eee, &primary);
     // background: $primary;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-background-clip: text;
     color: transparent;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -57,5 +56,22 @@
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+  }
+}
+
+:dir(rtl) {
+  .binary-digits {
+    left: 0;
+    & > div {
+      transform: rotate(-15deg) translate(-22rem, -10rem) !important;
+    }
+    &-footer {
+      // left: 0;
+
+      & > div {
+        // transform: rotate(15deg) translate(22rem, -20rem);
+      }
+      // transform: rotate(5deg) translate(0, 6rem) !important;
+    }
   }
 }

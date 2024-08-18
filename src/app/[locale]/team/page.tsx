@@ -7,12 +7,14 @@ import Leadership from "@/components/Leadership/Leadership";
 import Developers from "@/components/Developers/Developers";
 import TeamNote from "@/components/TeamNote/TeamNote";
 import MeetTeam from "@/components/MeetTeam/MeetTeam";
+import Header from "@/components/Header/Header";
 
 type Props = {};
 
 const page = (props: Props) => {
   return (
     <>
+      <Header />
       <Creative />
       <Connected />
       <Team>

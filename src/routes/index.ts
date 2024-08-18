@@ -1,41 +1,43 @@
+import { useTranslations } from "next-intl";
+
 export const routes = [
   {
-    label: "Home",
+    label: "home.label",
     href: "/",
     theme: "dark",
-    header: "Welcome.",
-    paragraph: "I love god, I love you, I love all!",
+    header: "home.header",
+    paragraph: "home.paragraph",
   },
   {
-    label: "About us",
+    label: "about.label",
     href: "/about",
     theme: "light",
-    header: "About.",
-    paragraph: "Meet ByteBits your next caretakers",
+    header: "about.header",
+    paragraph: "about.paragraph",
   },
   {
-    label: "Contact us",
+    label: "contact.label",
     href: "/contact",
     theme: "light",
     header: "",
     paragraph: "",
   },
   {
-    label: "Projects",
+    label: "projects.label",
     href: "/projects",
     theme: "light",
     header: "Our projects",
     paragraph: "Built with dedication, delivered with care.",
   },
   {
-    label: "Services",
+    label: "services.label",
     href: "/services",
     theme: "light",
     header: "Welcome.",
     paragraph: "I love god, I love you, I love all!",
   },
   {
-    label: "Our team",
+    label: "teams.label",
     href: "/team",
     theme: "light",
     header: "The brains behind the magic",

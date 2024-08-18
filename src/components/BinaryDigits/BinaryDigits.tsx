@@ -8,6 +8,15 @@ type Props = {
   footer: boolean;
 };
 
+const generateRandomBinaryDigits = (length: number) => {
+  let str = "";
+  for (let i = 0; i < length; i++) {
+    const rand = Math.floor(Math.random() * 2);
+    str = str + rand;
+  }
+  return str;
+};
+
 const BinaryDigits = (props: Props) => {
   const binaryStrings = useShiftingStrings("10");
 

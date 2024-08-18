@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./values.module.scss";
-import { values } from "@/config";
+import { values } from "@/config/index";
 
 type Props = {};
 
@@ -20,9 +20,9 @@ const Values = (props: Props) => {
         </div>
         <div>
           {values.map((value, idx) => (
-            <div key={value.header} >
+            <div key={value.header}>
               <h4>
-                <span style={{backgroundColor: value.color}} >{idx + 1}</span>
+                <span style={{ backgroundColor: value.color }}>{idx + 1}</span>
                 <span>{value.header}</span>
               </h4>
               <p>{value.text}</p>

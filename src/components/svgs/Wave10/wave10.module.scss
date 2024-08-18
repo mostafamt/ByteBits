@@ -17,3 +17,18 @@
     }
   }
 }
+
+:dir(rtl) {
+  .wave-10 {
+    transform: rotateY(180deg);
+  }
+}
+
+// :dir(rtl) {
+//   .wave-10 {
+//     & > img {
+//       display: none;
+//       // transform: rotateY(180deg);
+//     }
+//   }
+// }

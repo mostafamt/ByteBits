@@ -1,0 +1,39 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇪🇬 Arabic} en {🇺🇸 English} other {Unknown}}"
+  },
+  "home": {
+    "header": "Welcome.",
+    "paragraph": "I love god, I love you, I love all!",
+    "label": "Home"
+  },
+  "about": {
+    "header": "About.",
+    "paragraph": "Meet ByteBits your next caretakers",
+    "label": "About us"
+  },
+  "contact": {
+    "header": "",
+    "paragraph": "",
+    "label": "Contact us"
+  },
+  "projects": {
+    "header": "Our projects",
+    "paragraph": "Built with dedication, delivered with care.",
+    "label": "Projects"
+  },
+  "services": {
+    "header": "Welcome.",
+    "paragraph": "I love god, I love you, I love all!",
+    "label": "Services"
+  },
+  "teams": {
+    "header": "The brains behind the magic",
+    "paragraph": "From all around the world, united by innovation.",
+    "label": "Our team"
+  },
+  "client": {
+    "become": "become a client"
+  }
+}
