@@ -38,16 +38,12 @@
     & > li {
       //   padding: 1rem;
 
-      &:active {
-        background-color: red;
-      }
-
       & > a {
         color: #fff;
       }
 
       &:hover {
-        background-color: #fff;
+        font-weight: bold;
 
         & > a {
           color: $primary;
